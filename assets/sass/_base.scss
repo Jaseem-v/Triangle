@@ -156,7 +156,7 @@ html {
 .heading {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   align-items: center;
   text-align: center;
 
@@ -382,3 +382,7 @@ html {
     margin-bottom: 0;
   }
 }
+
+// .swiper-wrapper {
+//   overflow: hidden;
+// }
