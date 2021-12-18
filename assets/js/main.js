@@ -89,36 +89,27 @@ let modelContainer = document.querySelector(".enroll__container")
 let modelOverlay = document.querySelector(".enroll__overlay")
 let modelClose = document.querySelector(".model-close");
 
-modelClose.addEventListener("click", () => {
-    model.classList.remove("active")
-    modelOverlay.classList.remove("active")
-    modelContainer.classList.remove("active")
+
+function modelCloseFunction() {
     document.body.classList.remove("remove-scrolling");
-
-})
-
-enrollBtn.addEventListener("click", () => {
-    model.classList.add("active")
-    modelOverlay.classList.add("active")
-    modelContainer.classList.add("active")
-    document.body.classList.add("remove-scrolling");
-})
-// console.log(enrollBtn);
-
-
-
-const openBtn = document.querySelector(".open-btn")
-const nav_list = document.querySelector(".navigation__list")
-const overlay = document.querySelector(".overlay")
-const navContact = document.querySelector(".nav-contact")
-
-function mobileMenu() {
-    openBtn.classList.toggle("active");
-    nav_list.classList.toggle("active")
-    overlay.classList.toggle("hidden")
-    navContact.classList.toggle("hidden")
+    modelContainer.classList.remove("active")
+    setTimeout(() => {
+        modelOverlay.classList.remove("active")
+    }, 200)
+    setTimeout(() => {
+        model.classList.remove("active")
+    }, 500)
 }
 
-openBtn.addEventListener("click", mobileMenu)
-overlay.addEventListener("click", mobileMenu)
+modelClose.addEventListener("click", modelCloseFunction)
+modelOverlay.addEventListener("click", modelCloseFunction)
 
+enrollBtn.addEventListener("click", () => {
+    document.body.classList.add("remove-scrolling");
+    model.classList.add("active")
+    modelOverlay.classList.add("active")
+
+    setTimeout(() => {
+        modelContainer.classList.add("active")
+    }, 200)
+})
