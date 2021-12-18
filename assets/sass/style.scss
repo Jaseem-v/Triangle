@@ -490,6 +490,7 @@
     font-family: "Muli", sans-serif;
     transform: translateY(3.4rem);
     transition: all 0.2s;
+    z-index: 3;
   }
 
   &__input {
@@ -506,6 +507,7 @@
     border: none;
     background: transparent;
     border-bottom: 2px solid #c1c1c1;
+    z-index: 4;
 
     &:focus {
       outline: none;
@@ -700,8 +702,7 @@ main {
   position: relative;
 }
 
-
-.remove-scrolling { 
-  height: 100%; 
-  overflow: hidden; 
-} 
+.remove-scrolling {
+  height: 100%;
+  overflow: hidden;
+}

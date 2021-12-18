@@ -93,7 +93,7 @@ modelClose.addEventListener("click", () => {
     model.classList.remove("active")
     modelOverlay.classList.remove("active")
     modelContainer.classList.remove("active")
-    document.body.classList.remove("remove-scrolling"); 
+    document.body.classList.remove("remove-scrolling");
 
 })
 
@@ -104,3 +104,21 @@ enrollBtn.addEventListener("click", () => {
     document.body.classList.add("remove-scrolling");
 })
 // console.log(enrollBtn);
+
+
+
+const openBtn = document.querySelector(".open-btn")
+const nav_list = document.querySelector(".navigation__list")
+const overlay = document.querySelector(".overlay")
+const navContact = document.querySelector(".nav-contact")
+
+function mobileMenu() {
+    openBtn.classList.toggle("active");
+    nav_list.classList.toggle("active")
+    overlay.classList.toggle("hidden")
+    navContact.classList.toggle("hidden")
+}
+
+openBtn.addEventListener("click", mobileMenu)
+overlay.addEventListener("click", mobileMenu)
+
