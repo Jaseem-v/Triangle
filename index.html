@@ -13,13 +13,66 @@
 </head>
 
 <body>
+
+
     <main>
+
+        <div id="enroll" class="enroll">
+            <div class="enroll__overlay">
+            </div>
+
+            <div class="enroll__container">
+                <div class="enroll__head">
+                    <h4 class="enroll__head-tile">Enter Your Details</h4>
+                    <div class="enroll__head-icon">
+                        <i class="fas fa-times-circle model-close"></i>
+                    </div>
+                </div>
+                <form action="" class="enroll__form">
+                    <div class="enroll__form-group">
+                        <label for="Name" class="enroll__form-label">Name</label>
+                        <div class="enroll__form-input-box">
+                            <div class="enroll__form-input-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <input type="text" name="fname" id="fname" autocomplete="off" placeholder="Enter your Name"
+                                class="enroll__form-input" required>
+                        </div>
+                    </div>
+                    <div class="enroll__form-group">
+                        <label for="mobile" class="enroll__form-label">Mobile </label>
+                        <div class="enroll__form-input-box">
+                            <div class="enroll__form-input-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <input type="tel" name="mobile" id="mobile" autocomplete="off"
+                                placeholder="Enter Your Mobile Number" class="enroll__form-input" required>
+                        </div>
+                    </div>
+                    <div class="enroll__form-group">
+                        <label for="email" class="enroll__form-label"> E-mail</label>
+                        <div class="enroll__form-input-box">
+                            <div class="enroll__form-input-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <input type="email" name="email" id="email" autocomplete="off"
+                                placeholder="Enter Your  E-mail" class="enroll__form-input" required>
+                        </div>
+                    </div>
+
+                    <a href="#/" class="btn btn--enroll"> Submit <span></span></a>
+
+
+                </form>
+            </div>
+        </div>
         <!-- ---------nav-bar---------- -->
         <nav class="navigation " id="navbar">
             <div class="container navigation__content">
                 <div class="overlay hidden"></div>
                 <a href="index.html" class="navigation__logo">
-                    <img src="assets/img/logo-light.png" alt="logo">
+                    <img src="assets/img/logo-light.png" alt="logo" class="navigation__logo--1">
+                    <img src="assets/img/logo.png" alt="logo" class="navigation__logo--2">
                 </a>
                 <ul class="navigation__list">
                     <li class="navigation__items"> <a href="#" class="navigation__link active">Home</a></li>
@@ -27,12 +80,12 @@
                         <a href="#our-programs" class="navigation__link ">Our Programs</a>
                     </li>
                     <li class="navigation__items"> <a href="#methodology" class="navigation__link">Methodology</a></li>
-                    <li class="navigation__items"> <a href="#/" class="navigation__link"> About Us</a></li>
-                    <li class="navigation__items"> <a href="#/" class="navigation__link">Contact Us</a></li>
+                    <li class="navigation__items"> <a href="#about" class="navigation__link"> About Us</a></li>
+                    <li class="navigation__items"> <a href="#contact" class="navigation__link">Contact Us</a></li>
                     <li class="navigation__items mobile-btn"> <a href="#/" class="navigation__link ">Course
                             Registration</a></li>
                 </ul>
-                <a href="#/" class="btn btn--nav"> Course Registration<span></span></a>
+                <a href="#/" class="btn btn--nav" id="enroll-btn"> Course Registration<span></span></a>
 
                 <div class="navigation__menu ">
                     <ul class="open-btn">
@@ -434,6 +487,129 @@
             </div>
         </div>
         <!-- -x-students-review-x- -->
+        <!-- --contact-- -->
+        <div class="contact section-padding" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
+                        <div class="contact__left-part">
+                            <h4 class="contact__title">
+                                We'd Love To Hear From You
+                            </h4>
+                            <span class="contact__sub-title">
+                                Send a message and we'll responed as soon as possible
+                            </span>
+
+
+                            <form action="" class="contact__form">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-6">
+                                        <div class="form__group">
+                                            <label for="fname" class="form__label">Name</label>
+                                            <input type="text" name="fname" id="fname" autocomplete="off" placeholder=""
+                                                class="form__input" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                        <div class="form__group">
+                                            <label for="mobile" class="form__label">Mobile</label>
+                                            <input type="tel" name="mobile" id="mobile" placeholder=""
+                                                class="form__input" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="email" class="form__label">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="" class="form__input"
+                                        autocomplete="off" required>
+                                </div>
+                                <div class="form__group">
+                                    <label for="message" class="form__label"></label>
+                                    <textarea name="message" id="message" class="form__text-area"
+                                        placeholder="Your message"></textarea>
+                                </div>
+                            </form>
+                            <a href="#/" class="btn btn--contact"> Send Message <span></span></a>
+
+                        </div>
+
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                        <div class="contact__detail">
+                            <div class="contact__detail-group">
+                                <div class="contact__detail-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="conact__detail-content">
+                                    <h4 class="contact__title">
+                                        Reach Us
+                                    </h4>
+                                    <p class="paragraph contact__paragraph">
+                                        2512, New Market,<br>Eliza Road, Sincher 80 CA,<br>Canada, USA
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="contact__detail-group">
+                                <div class="contact__detail-icon">
+                                    <i class="fas fa-at"></i>
+                                </div>
+                                <div class="conact__detail-content">
+                                    <h4 class="contact__title">
+                                        Drop A Mail
+                                    </h4>
+                                    <p class="paragraph contact__paragraph">
+                                        support@Rikada.com<br>
+                                        Rikada@gmail.com
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="contact__detail-group">
+                                <div class="contact__detail-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="conact__detail-content">
+                                    <h4 class="contact__title">
+                                        Make A Call
+                                    </h4>
+                                    <p class="paragraph contact__paragraph">
+                                        (41) 123 521 458 <br>
+                                        +91 235 548 7548
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="contact__map">
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class=" contact__map-item">
+                                <div class="contact__map-iframe">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15718.435904470449!2d76.2997749!3d9.9664545!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x59e26429dff3dccd!2sVyapar%20Bhavan!5e0!3m2!1sen!2sin!4v1632284894466!5m2!1sen!2sin"
+                                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                                        tabindex="0">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- --contact-- -->
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

@@ -23,8 +23,9 @@ ol {
 }
 
 body {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 400;
+  // overflow: hidden;
 }
 
 img {
@@ -82,7 +83,7 @@ html {
 /*=================================================*/
 
 .btn {
-  background: #03B97C;
+  background: #03b97c;
   // box-shadow: 0px 7px 10px #58bdff3d;
   border-radius: 6px;
   font-size: 1.6rem;
@@ -130,11 +131,21 @@ html {
     box-shadow: none;
   }
 
+  &--contact {
+    margin: 3.5rem 0 0;
+  }
+
+  &--enroll{
+    width: 100%;
+    display: block;
+    margin-top:3rem ;
+  }
+
   &--header {
     padding: 1.2rem 2.4rem;
     box-shadow: none;
     margin-top: 1rem;
-    background: #03B97C;
+    background: #03b97c;
     border: none;
   }
 
@@ -172,8 +183,8 @@ html {
     margin-bottom: 2rem;
     line-height: 36px;
 
-    span{
-      color: #03B97C;
+    span {
+      color: #03b97c;
     }
     &--features {
       color: #fff;
@@ -219,7 +230,6 @@ html {
   letter-spacing: 0px;
   margin-bottom: 1rem;
   // text-align: justify;
-
 
   @media only screen and (max-width: $bp-xsmall) {
     font-size: var(--responsive-font);
@@ -350,7 +360,7 @@ html {
 /*=================================================*/
 
 .breadcrumb {
-  background-image: url('../img/inner-bg.jpg');
+  background-image: url("../img/inner-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -367,7 +377,7 @@ html {
     height: 100%;
     opacity: 0.4;
     background: #016fb7;
-    content: '';
+    content: "";
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     transition: all 0.4s ease;
