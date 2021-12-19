@@ -609,6 +609,7 @@ main {
     @media only screen and (max-width: $bp-xsmall) {
       flex-direction: column;
       justify-content: center;
+      text-align: center;
     }
   }
   &__social {
@@ -646,6 +647,7 @@ main {
       // max-width: 27rem;
       line-height: 2;
       margin-top: 1rem;
+  
     }
 
     &--2 {
