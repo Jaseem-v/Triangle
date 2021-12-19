@@ -4,8 +4,8 @@
 
 .navigation {
   width: 100%;
-  background-color: transparent !important;
-  position: absolute;
+  background-color: #fff !important;
+  position: relative;
   top: 0;
   left: 0;
   -webkit-transition: all 0.4s;
@@ -39,11 +39,11 @@
         color: #30384e;
 
         &:hover {
-          color: #03b97c;
+          color: #376D85;
         }
 
         &.active {
-          color: #03b97c;
+          color: #376D85;
           // font-weight: 500;
         }
       }
@@ -163,7 +163,7 @@
       width: 100%;
       padding: 3rem 0;
       &:not(:last-child) {
-        border-bottom: 1px solid rgba(#03b97c, 0.2);
+        border-bottom: 1px solid rgba(#376D85, 0.2);
       }
     }
   }
@@ -171,13 +171,13 @@
   &__link {
     font-size: 1.55rem;
     font-weight: 500;
-    color: #fff;
+    color: #231f20;
     &:hover {
-      color: #03b97c;
+      color: #376D85;
     }
 
     &.active {
-      color: #03b97c;
+      color: #376D85;
       font-weight: 500;
     }
 
