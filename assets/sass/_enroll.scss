@@ -141,7 +141,16 @@
                 font-style: normal;
                 cursor: pointer;
                 pointer-events: none;
+
+                &--comments {
+                    top: 27%;
+                }
             }
+        }
+
+        &-textarea {
+            height: 10rem;
+            width: 100%;
         }
     }
 }
