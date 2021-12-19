@@ -209,7 +209,7 @@
     .hamburger {
       // overflow: hidden;
       // height: 1px;
-      background: #fff;
+      // background: #fff;
       .line {
         content: "";
         width: 25px;
@@ -227,7 +227,7 @@
       }
     }
     #hamburger-1 {
-      &.is-active {
+      &.active {
         .line {
           &:nth-child(2) {
             opacity: 0;

@@ -148,13 +148,13 @@ const navContact = document.querySelector(".nav-contact")
 overlay.classList.add("hidden")
 
 function mobileMenu() {
-    // openBtn.classList.toggle("active");
+    openBtn.classList.add("active");
     nav_list.classList.add("active")
     overlay.classList.remove("hidden")
     // navContact.classList.toggle("hidden")
 }
 function mobileMenuClose() {
-    // openBtn.classList.toggle("active");
+    openBtn.classList.remove("active");
     nav_list.classList.remove("active")
     overlay.classList.add("hidden")
 
@@ -165,5 +165,5 @@ function mobileMenuClose() {
 
 openBtn.addEventListener("click", mobileMenu)
 closeBtn.addEventListener("click", mobileMenuClose)
-overlay.addEventListener("click", mobileMenu)
+overlay.addEventListener("click", mobileMenuClose)
 
