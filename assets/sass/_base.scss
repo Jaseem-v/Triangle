@@ -121,7 +121,6 @@ html {
     }
   }
 
-
   &--white {
     background: #fff;
     color: #016fb7;
@@ -133,10 +132,10 @@ html {
     margin: 3.5rem 0 0;
   }
 
-  &--enroll{
+  &--enroll {
     width: 100%;
     display: block;
-    margin-top:3rem ;
+    margin-top: 3rem;
   }
 
   &--header {
@@ -153,7 +152,9 @@ html {
   }
   @media only screen and (max-width: $bp-992) {
     &--nav {
-      display: none;
+      // display: none;
+      order: 3;
+      margin-left: auto;
     }
   }
 }

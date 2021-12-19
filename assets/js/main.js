@@ -113,3 +113,10 @@ enrollBtn.addEventListener("click", () => {
         modelContainer.classList.add("active")
     }, 200)
 })
+
+
+$(document).ready(function () {
+    $(".hamburger").click(function () {
+        $(this).toggleClass("is-active");
+    });
+});
