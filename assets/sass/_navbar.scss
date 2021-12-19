@@ -39,23 +39,23 @@
         color: #30384e;
 
         &:hover {
-          color: #376D85;
+          color: #376d85;
         }
 
         &.active {
-          color: #376D85;
+          color: #376d85;
           // font-weight: 500;
         }
       }
 
-      &__logo {
-        &--2 {
-          display: inline-block;
-        }
-        &--1 {
-          display: none;
-        }
-      }
+      // &__logo {
+      //   &--2 {
+      //     display: inline-block;
+      //   }
+      //   &--1 {
+      //     display: none;
+      //   }
+      // }
     }
   }
 
@@ -88,18 +88,18 @@
       order: 2;
     }
 
-    &--2 {
-      display: none;
-      @media only screen and (max-width: $bp-992) {
-        display: inline-block;
-      }
-    }
+    // &--2 {
+    //   display: none;
+    //   @media only screen and (max-width: $bp-992) {
+    //     display: inline-block;
+    //   }
+    // }
 
-    &--1 {
-      @media only screen and (max-width: $bp-992) {
-        display: none;
-      }
-    }
+    // &--1 {
+    //   @media only screen and (max-width: $bp-992) {
+    //     display: none;
+    //   }
+    // }
   }
 
   &__list {
@@ -163,7 +163,7 @@
       width: 100%;
       padding: 3rem 0;
       &:not(:last-child) {
-        border-bottom: 1px solid rgba(#376D85, 0.2);
+        border-bottom: 1px solid rgba(#376d85, 0.2);
       }
     }
   }
@@ -173,11 +173,11 @@
     font-weight: 500;
     color: #231f20;
     &:hover {
-      color: #376D85;
+      color: #376d85;
     }
 
     &.active {
-      color: #376D85;
+      color: #376d85;
       font-weight: 500;
     }
 
