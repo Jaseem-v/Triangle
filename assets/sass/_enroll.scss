@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     &.active {
         z-index: 40;
     }
@@ -31,9 +31,9 @@
     }
 
     &__container {
-        min-width: 300px;
-        max-width: 500px;
-        width: 500px;
+        min-width: 30rem;
+        max-width: 50rem;
+        width: 50rem;
         background: #fff;
         // height: 50vh;
         margin: 5rem auto;
