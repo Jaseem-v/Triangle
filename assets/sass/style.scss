@@ -413,6 +413,7 @@
 // Contact
 
 .contact {
+  padding-bottom: 0;
   &__left-part {
     margin-right: 3rem;
     @media only screen and (max-width: $bp-992) {
@@ -581,4 +582,60 @@ main {
   height: 100%;
   overflow: hidden;
   transition: overflow 0.1s;
+}
+
+////////////////////////////
+// footer
+
+.footer {
+  background: #121416;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 0;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: $bp-xsmall) {
+      transform: translateX(-1.5rem);
+    }
+    &-item {
+      margin-right: 1rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+      i {
+        color: #c3c3c3;
+
+        &:hover {
+          color: rgba(#c3c3c3, 0.8);
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    color: #c3c3c3;
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 0;
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 1.6rem;
+      // max-width: 27rem;
+      line-height: 2;
+      margin-top: 1rem;
+    }
+  }
+
+  &__nvf {
+    color: #c3c3c3;
+  }
 }
