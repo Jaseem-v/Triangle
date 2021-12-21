@@ -344,10 +344,17 @@
     color: #fff;
     transition: all 0.25s ease-in-out;
     cursor: pointer;
+    border-radius: 7px;
+
 
     &:hover {
       transform: translateY(-6px);
+
+      // box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+      box-shadow: 0 10px 6px -6px rgba(#555,0.5),10px 10px 6px -6px rgba(#555,0.5);
+
     }
+    
 
     &--1 {
       grid-column: 1/3;
@@ -605,7 +612,7 @@
       height: 100%;
       iframe {
         width: 100%;
-        height: 55vh;
+        height: 60vh;
 
         @media only screen and (max-width: $bp-xsmall) {
           height: 40vh;
