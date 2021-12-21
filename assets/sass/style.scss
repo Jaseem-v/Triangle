@@ -368,7 +368,6 @@
     &--4 {
       background: #bc85a4;
       grid-column: 7/9;
-      
 
       @media only screen and (max-width: $bp-largest) {
         grid-column: 2/4;
@@ -427,7 +426,13 @@
 // Brands
 
 .brands {
-  background: #f7f8f9;
+  // background: #f7f8f9;
+  background-image: url("../img/banner2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
 
   &__single-item {
     padding: 1rem;
