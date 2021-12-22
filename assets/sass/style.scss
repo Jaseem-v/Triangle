@@ -349,7 +349,7 @@
 
     &:hover {
       transform: translateY(-6px);
-      box-shadow: 10px 10px 40px 1px rgb(85 85 85 / 50%), -10px 9px 40px 1px rgb(85 85 85 / 50%);
+      box-shadow: 10px 10px 40px 1px rgb(85 85 85 / 20%), -10px 9px 40px 1px rgb(85 85 85 / 20%);
     }
 
     &--1 {
@@ -361,7 +361,7 @@
     }
 
     &--2 {
-      // background: #80g2b1;
+      background: #8092b1;
       grid-column: 3/5;
       @media only screen and (max-width: $bp-xsmall) {
         grid-column: 3/5;
