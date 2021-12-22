@@ -344,8 +344,9 @@
     background: #79afb4;
     padding: 6.5rem 3rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
     text-transform: capitalize;
     text-align: center;
     color: #fff;
@@ -406,6 +407,14 @@
 
   &__title {
     font-size: 1.8rem;
+  }
+
+  &__letter{
+    font-size: 5rem;
+    display: block;
+    // text-align: left;
+    // width: 80%;
+    font-weight: 900;
   }
 }
 
