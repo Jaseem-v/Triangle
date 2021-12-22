@@ -314,6 +314,10 @@
   background-attachment: fixed;
   position: relative;
 
+  @media only screen and (max-width: $bp-xsmall) {
+    background: #e4e4e4;
+  }
+
   &__conatiner {
     display: grid;
     margin-top: 5rem;
@@ -323,9 +327,6 @@
 
     @media only screen and (max-width: $bp-largest) {
       grid-template-columns: repeat(6, 1fr);
-    }
-    @media only screen and (max-width: $bp-small) {
-      // font-size: 50%;
     }
     @media only screen and (max-width: $bp-xsmall) {
       // font-size: 48.75%;
@@ -346,15 +347,12 @@
     cursor: pointer;
     border-radius: 7px;
 
-
     &:hover {
       transform: translateY(-6px);
 
       // box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
-      box-shadow: 0 10px 6px -6px rgba(#555,0.5),10px 10px 6px -6px rgba(#555,0.5);
-
+      box-shadow: 0 10px 6px -6px rgba(#555, 0.5), 10px 10px 6px -6px rgba(#555, 0.5);
     }
-    
 
     &--1 {
       grid-column: 1/3;
