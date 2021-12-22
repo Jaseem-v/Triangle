@@ -274,9 +274,9 @@
   }
 
   &__title {
-    font-size: 1.8rem;
+    font-size: 1.65rem;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.4;
     color: #30384e;
     margin-bottom: 1.5rem;
   }
@@ -399,6 +399,10 @@
       }
     }
   }
+
+  &__title{
+    font-size: 1.8rem;
+  }
 }
 
 ///////////////////////////////////////
@@ -476,7 +480,7 @@
 
     &-name {
       // margin-bottom: 0.5rem;
-      font-size: 1.7rem;
+      font-size: 1.55rem;
       margin: 0;
       line-height: 8px;
       font-weight: 500;
