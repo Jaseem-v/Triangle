@@ -344,7 +344,6 @@
     text-align: center;
     color: #fff;
     transition: all 0.25s ease-in-out;
-    cursor: pointer;
     border-radius: 7px;
 
     &:hover {
@@ -447,7 +446,9 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
-
+  @media only screen and (max-width: $bp-xsmall) {
+    background: #ede8e4;
+  }
   &__single-item {
     padding: 1rem;
     display: flex;
