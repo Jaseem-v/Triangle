@@ -15,7 +15,7 @@
   cursor: pointer;
   width: 5rem;
   height: 5rem;
-  background-color: #37455f;
+  background-color: #376d85;
   display: none;
   -webkit-border-radius: 6rem;
   -moz-border-radius: 6rem;
@@ -541,7 +541,7 @@
   background: 0 0;
   background-color: #376d85;
   border-radius: 50%;
-  &:hover{
+  &:hover {
     background: #bc314b;
   }
 
@@ -559,8 +559,6 @@
     transform: translate(-50%, -50%);
     font-size: 2.3rem;
     font-weight: 900;
-
-    
   }
 }
 
@@ -600,6 +598,7 @@
   }
 
   &__map {
+    margin-top: 8rem;
     &-item {
       display: flex;
       justify-content: center;
